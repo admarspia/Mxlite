@@ -5,7 +5,7 @@ static config_t config_instance;
 config_t* config_get_instance(void) {
     return &config_instance;
 }
-
+// setups the initial connction 
 void config_init(config_t *config) {
     memset(config, 0, sizeof(config_t));
     config->port = 8080;
@@ -16,7 +16,7 @@ void config_init(config_t *config) {
     config->keep_alive_timeout = 60;
     config->development_mode = 0;
 }
-
+//removing white space 
 static void trim_whitespace(char *str) {
     char *end;
     while (isspace((unsigned char)*str)) str++;
@@ -58,7 +58,7 @@ static int parse_config_line(config_t *config, const char *line) {
 
     return 0;
 }
-
+//reading the config line by line
 int config_load(config_t *config, const char *filename) {
     FILE *file = fopen(filename, "r");
     if (!file) {
