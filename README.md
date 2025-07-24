@@ -1,4 +1,4 @@
-# NxLite
+# MxLite
 
 A lightweight HTTP server written in C with caching and compression features.
 
@@ -72,13 +72,13 @@ make -j$(nproc)
 
 ```bash
 # Run with default configuration
-./build/NxLite
+./build/MxLite
 
 # Run with custom config file
-./build/NxLite server.conf
+./build/MxLite server.conf
 
 # Run in background
-./build/NxLite server.conf &
+./build/MxLite server.conf &
 ```
 
 ### Development Mode
@@ -87,8 +87,8 @@ Development mode disables DoS protection features for easier testing:
 
 ```bash
 # Enable development mode
-./build/NxLite server.conf --dev
-./build/NxLite server.conf -d
+./build/MxLite server.conf --dev
+./build/MxLite server.conf -d
 
 # Or via configuration file
 echo "development_mode=true" >> server.conf
