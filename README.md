@@ -55,8 +55,8 @@ brew install cmake
 
 ```bash
 # Clone the repository
-git clone https://github.com/dexter-xD/NxLite.git
-cd NxLite
+git clone https://github.com/dexter-xD/MxLite.git
+cd MxLite
 
 # Create build directory
 mkdir build && cd build
